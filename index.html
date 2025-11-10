@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- Set your doctype, so the browser knows what coding language this is -->
+<html lang="en"> <!-- tell the browser where the code is and what speaking language this is -->
+  <head>
+    <meta charset="UTF-8"> <!-- what character set are you using? -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- setting up responsive design (see next week!) -->
+    <title>EDCA Base Map</title> <!-- Call your map whatever title you want -->
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  </head> 
+  <body>
+    <div id="map"></div>
+    <h1 class = "title">American Military EDCA Sites in the Philippines</h1>
+    <h3 class = "author">Map Produced by Joaquin Antonio. 2025</h3>
+    <p class = "sources">
+        Sources:<br>
+        U.S. Department of War
+    </p>
+    
+    <div class = "legend">
+        <h2>Legend</h2>
+        <div class="legend_items" id="bases">
+            <img src="https://cdn-icons-png.flaticon.com/512/2090/2090037.png" alt="EDCA icon">
+            <span>EDCA Bases</span>
+        </div>
+
+        <div class="bases_subitems" id="bases_list">
+            <div class="subitem">Antonio Bautista Air Base</div>
+            <div class="subitem">Cesar Basa Air Base</div>
+            <div class="subitem">Benito Ebuen Air Base</div>
+            <div class="subitem">Fort Ramon Magsaysay</div>
+            <div class="subitem">Lumbia Air Field</div>
+            <div class="subitem">Naval Station Narciso del Rosario</div>
+            <div class="subitem">Camp Melchor Dela Cruz</div>
+            <div class="subitem">Cagayan North International Airport</div>
+            <div class="subitem">Naval Base Camilo Osias</div>
+          </div>
+
+    </div>
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js'></script>
+    <script src="./script.js"></script>
+  </body>  
+</html>
